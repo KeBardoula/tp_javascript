@@ -40,6 +40,7 @@
               role="tab"
               aria-controls="question-2-content"
               aria-selected="false"
+              disabled
 
       >
         Question 2
@@ -180,24 +181,7 @@
                 role="tabpanel"
                 aria-labelledby="question-1-tab"
                 tabindex="0"
-        >
-          <form id="form-question-1">
-            <div class="mb-3">
-              <label>le PHP s'exécute</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="question-1" id="question-1-client" value="client">
-                <label class="form-check-label" for="question-1-client">
-                  Côté client
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="question-1" id="question-1-server" >
-                <label class="form-check-label" for="question-1-server">
-                  Côté serveur
-                </label>
-              </div>
-            </div>
-          </form>
+        >       
 
         </div>
         <div
@@ -207,23 +191,6 @@
                 aria-labelledby="question-2-tab"
                 tabindex="0"
         >
-          <form id="form-question-2">
-            <div class="mb-3">
-              <label>Quelle est la capitale de la norvége</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="question-2" id="question-2-oslo" value="client">
-                <label class="form-check-label" for="question-2-oslo">
-                  Oslo
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="question-2" id="question-2-stockholm" >
-                <label class="form-check-label" for="question-2-stockholm">
-                  Stockholm
-                </label>
-              </div>
-            </div>
-          </form>
 
         </div>
         <div
@@ -233,23 +200,6 @@
                 aria-labelledby="question-3-tab"
                 tabindex="0"
         >
-          <form id="form-question-3">
-            <div class="mb-3">
-              <label>Comment déclare t'on une variable en php</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="question-3" id="question-3-tiret" value="client">
-                <label class="form-check-label" for="question-3-tiret">
-                  Avec le caractère -
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="question-3" id="question-3-dollar" >
-                <label class="form-check-label" for="question-3-dollar">
-                  Avec le caractère $
-                </label>
-              </div>
-            </div>
-          </form>
 
         </div>
         <div
@@ -330,19 +280,22 @@
     </div>
 
   </div>
-  <div class="mt-2 d-flex justify-content-between">
-    <div>
-      <button class="btn btn-primary" type="button" id="previous-btn">Précédente</button>
-    </div>
-    <div>
-      <button class="btn btn-primary" type="button" id="next-btn">Suivante</button>
-    </div>
+    <div class="mt-2 d-flex justify-content-between">
+      <div>
+        <button class="btn btn-primary" type="button" id="previous-btn">Précédente</button>
+      </div>
+      <div>
+        <button class="btn btn-primary" type="button" id="next-btn">Suivante</button>
+      </div>
+      <div>
+        <button class="btn btn-primary" type="button" id="restart-btn">Recommencer</button>
+      </div>
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossOrigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="js/index.js"></script>
+<script src="js/index.js" type="module"></script>
 </body>
 </html>
